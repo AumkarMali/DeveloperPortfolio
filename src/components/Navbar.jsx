@@ -25,7 +25,7 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center">
-            
+            {/* Additional items can go here */}
           </div>
           <div className="lg:hidden md:flex flex-col justify-end">
             <button onClick={toggleNavbar}>
@@ -34,8 +34,16 @@ const Navbar = () => {
           </div>
         </div>
         {mobileDrawerOpen && (
-          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
-            
+          <div className="fixed right-0 z-20 bg-neutral-900 w-full p-6 flex flex-col justify-center items-center lg:hidden">
+            <ul className="flex flex-col space-y-4">
+              {navItems.map((item, index) => (
+                <li key={index}>
+                  <a href={item.href} className="text-white text-lg">
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
           </div>
         )}
       </div>
