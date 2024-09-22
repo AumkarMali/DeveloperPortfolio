@@ -1,8 +1,8 @@
 import Navbar from "./components/Navbar";
-import FeatureSection from "./components/FeatureSection";
+import Intro from "./components/introductionPage";
 import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
-import Pricing from "./components/Pricing";
+import Projects from "./components/projectTimeline";
 
 
 
@@ -12,8 +12,8 @@ const App = () => {
     <>
       <Navbar />
       <HeroSection />
-      <FeatureSection />
-      <Pricing />
+      <Intro />
+      <Projects />
       <Footer />
     </>
   );
