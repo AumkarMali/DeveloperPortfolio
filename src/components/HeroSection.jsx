@@ -18,7 +18,7 @@ const HeroSection = () => {
      
       <div className="flex justify-center my-10">
         <a
-          href="https://github.com/AumkarMali?tab=repositories"
+          href="https://github.com/AumkarMali"
           className="bg-gradient-to-r from-blue-500 to-black-800 py-3 px-5 mx-3 rounded-md"
         >
           <span className="typing-animation">GitHub</span>
